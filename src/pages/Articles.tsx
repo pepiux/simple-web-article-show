@@ -1,15 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
-interface Article {
-  id: number;
-  titulo: string;
-  contenido: string;
-  imagen: string;
-  autor: string;
-  fecha_publicacion: string;
-}
+import { Article, getArticles } from '../services/articleService';
 
 const Articles = () => {
   const [articles, setArticles] = useState<Article[]>([]);
@@ -19,11 +11,7 @@ const Articles = () => {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const response = await fetch('/php/get_articles.php');
-        if (!response.ok) {
-          throw new Error('Failed to fetch articles');
-        }
-        const data = await response.json();
+        const data = await getArticles();
         setArticles(data);
         setLoading(false);
       } catch (err) {
@@ -75,4 +63,3 @@ const Articles = () => {
 };
 
 export default Articles;
-
