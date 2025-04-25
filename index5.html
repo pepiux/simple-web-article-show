@@ -165,15 +165,14 @@
 							<li class="parent">
 							  <a class="current" href="#">Home - Corporate</a>
 							  <ul class="sub">
-								<li><a class="current" href="index.html">Corporate 1</a></li>
+								<li><a href="index.html">Corporate 1</a></li>
 								<li><a href="index2.html">Corporate 2</a></li>
 								<li><a href="index3.html">Corporate 3</a></li>
 								<li><a href="index4.html">Corporate 4</a></li>
-								<li><a href="index5.html">Corporate 5</a></li>
+								<li><a class="current" href="index5.html">Corporate 5</a></li>
 								<li><a href="index6.html">Corporate 6</a></li>
 							  </ul>
 							</li>
-							<li><a href="index-portfolio.html">Home - Portfolio</a></li>
 							<li class="parent">
 							  <a href="#">Home - Blog</a>
 							  <ul class="sub">
@@ -181,6 +180,7 @@
 								<li><a href="index-blog-2.html">Blog Layout 2</a></li>
 							  </ul>
 							</li>
+							<li><a href="index-portfolio.html">Home - Portfolio</a></li>
 							<li><a href="index-light.html">Home - Light</a></li>
 							<li><a href="index-animate.html">Home - Animate</a></li>
 							<li><a href="index-video.html">Home - Video</a></li>
@@ -271,7 +271,7 @@
 							<li><a href="portfolio-3-col.html">3 Columns</a></li>
 							<li><a href="portfolio-4-col.html">4 Columns</a></li>
 							<li><a href="portfolio-masonry.html">Portfolio Masonry</a></li>
-							<li><a href="portfolio-timeline.html">Portfolio Timeline</a></li>
+<li><a href="portfolio-timeline.html">Portfolio Timeline</a></li>
 							<li><a href="portfolio-full-width.html">Portfolio Full Width</a></li>
 							<li><a href="portfolio-no-filter.html">Portfolio No Filter</a></li>
 							<li class="parent">
@@ -288,8 +288,8 @@
 						  <a href="blog-large-image.html"><span aria-hidden="true" class="icon_pens main-menu-icon"></span><div class="main-menu-title">BLOG</div></a>
 						  <ul class="sub">
 							<li><a href="blog-masonry.html">Blog Masonry</a></li>
-							<li><a href="blog-masonry-ajax.html">Blog Masonry Ajax</a></li>
-							<li><a href="blog-timeline.html">Blog Timeline</a></li>
+<li><a href="blog-masonry-ajax.html">Blog Masonry Ajax</a></li>
+<li><a href="blog-timeline.html">Blog Timeline</a></li>
 							<li><a href="blog-full-width.html">Blog Full Width</a></li>
 							<li><a href="blog-large-image.html">Blog Large Image</a></li>
 							<li><a href="blog-small-image.html">Blog Small Image</a></li>
@@ -299,8 +299,8 @@
 							  <a href="#">Blog Single</a>
 							  <ul class="sub">
 								<li><a href="blog-single-disqus.html">Disqus Comments</a></li>
-								<li><a href="blog-single-facebook.html">Facebook Comments</a></li>
-								<li><a href="blog-single.html">Right Sidebar</a></li>
+<li><a href="blog-single-facebook.html">Facebook Comments</a></li>
+<li><a href="blog-single.html">Right Sidebar</a></li>
 								<li><a href="blog-single-left.html">Left Sidebar</a></li>
 							  </ul>
 							</li>
@@ -395,7 +395,7 @@
 						<!-- SLIDE 1 -->
 						<li data-transition="zoomin" data-slotamount="7" data-masterspeed="500" data-thumb="images/revo-slider/homeslider_thumb1.jpg"  data-saveperformance="on"  data-title="Intro Slide">
 							<!-- MAIN IMAGE -->
-							<img src="images/revo-slider/dummy.png"  alt="slidebg1"  data-lazyload="images/revo-slider/slider-1-bg1-860.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"   >
+							<img src="images/revo-slider/dummy.png"  alt="slidebg1"  data-lazyload="images/revo-slider/slider-1-bg1.jpg" data-bgrepeat="no-repeat"  data-bgposition="right top" data-kenburns="on" data-duration="15000" data-ease="Linear.easeNone" data-bgfit="110" data-bgfitend="100" data-bgpositionend="left bottom">
 							<!-- LAYERS -->
 
 
@@ -643,7 +643,7 @@
 						<!-- SLIDE 3 -->
 						<li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" data-thumb="images/revo-slider/homeslider_thumb3.jpg" data-saveperformance="on" data-title="FEATURES">
 										<!-- MAIN IMAGE -->
-										<img src="images/revo-slider/dummy.png"  alt="slidebg3" data-lazyload="images/revo-slider/newyorkbg-860.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+										<img src="images/revo-slider/newyorkbg.jpg"  alt="darkblurbg"  data-bgrepeat="no-repeat"  data-bgposition="right top" data-kenburns="on" data-duration="15000" data-ease="Linear.easeNone" data-bgfit="110" data-bgfitend="100" data-bgpositionend="left bottom">
 										<!-- LAYERS -->
 
 										<!-- LAYER NR. 1 -->
@@ -803,7 +803,7 @@
 			</div>
 		</div>
 	</div>
-<!-- PORTFOLIO -->
+<!-- PORTFOLIO FILTER-->
 	<div class="title-lines-container m-top-min-35">
 		<div class="container">
 			<div class="title-lines">
@@ -816,10 +816,21 @@
 			</div>	
 		</div>	
 	</div>	
-	<div class="container ">
-	
-		<div class="row box-with-hover m-top-50">
-
+	<div class="container portfolio-filter-container">
+		<div class="row m-bot-30">
+			<div id="options" class="col-md-12">
+				<ul id="filters" class="option-set clearfix" data-option-key="filter"> 
+					<li><a href="#filter" data-option-value="*" class="selected">ALL</a></li> 
+					<li><a href="#filter" data-option-value=".category1">WEB</a></li> 
+					<li><a href="#filter" data-option-value=".category2">DESIGN</a></li> 
+					<li><a href="#filter" data-option-value=".category3">PHOTO</a></li> 
+				</ul>
+			</div>
+		</div>
+		
+		<div class="row box-with-hover">
+			<div class="filter-portfolio clearfix">
+				<div id="filter-container" class="clearfix">
 				<!-- PORTFOLIO ITEM 1-->
 					<div class="element category1 col-xs-12 col-sm-6 col-md-3 m-bot-30">
 							<div class="view view-first hovered">
@@ -934,421 +945,234 @@
 							</div>
 					</div>
 
-	
+				</div>
+			</div>
 		</div>
 	
 	</div>	
-
-<!-- FEATURES 7 -->	
-	<div class="title-lines-container feature7-bg m-top-30 m-bot-70">
-		<div class="feature7-bg-mask">
-
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="feature7-main-container">
-							<div class="feature7-main-text">
-								DO YOU WANT<br>
-								TO CREATE A GOOD<br>
-								<b>WEBSITE?</b>
-							</div>
-							<div class="feature7-sub-text">
-								We working hard in order to<br>
-								your company created<br>
-								website easily
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-8">	
-						<div class="feature7-img-container">
-							<img src="images/feature7-phone.png" alt="Ipsum">	
-						</div>
-					</div>
-				
-				</div>
-			</div>
-	
-		</div>
-	</div>
-	
-<!-- FEATURES 4 -->
-	<div class="title-lines-container">
-		<div class="container">
-				
-						<div class="row">
-							<div class="col-md-4">
-								
-								<!-- Accordion -->
-								<div class="accordion-custom m-bot-20">
-							
-								  <h3><a href="#">LOREM IPSUM</a></h3>
-								  <div>
-									<p>Nunc ipsum risus, bibendum quis tincidunt a, tempor quis nunc. Aenean in odio in sapien porttitor sodales.</p>
-								  </div>
-								  
-								  <h3><a href="#">VESTILUM PULVINAR</a></h3>
-								  <div>
-									<p>Nunc ipsum risus, bibendum quis tincidunt a, tempor quis nunc. Aenean in odio in sapien porttitor sodales.Nunc ipsum risus, bibendum quis tincidunt a, tempor quis nunc.</p>
-								  </div>
-								  
-								  <h3><a href="#">DONEC SEDIN</a></h3>
-								  <div>
-								  <p>Nunc ipsum risus, bibendum quis tincidunt a, tempor quis nunc. Aenean in odio in sapien porttitor sodales.</p>
-								  </div> 
-							 
-								</div><!-- End accordion -->
-							
-							</div>
-							<div class="col-md-8">
-							
-								<div class="row">
-									<div class="col-sm-6">
-										<div class="feature4-box">
-											<div class="feature4-box-icon">
-												<span aria-hidden="true" class="icon_adjust-horiz "></span>
-											</div>
-											<div class="feature4-box-info">
-												<h4 class="m-bot-5">FULLY RESPONSIVE</h4>
-												<p class="m-bot-20">Lorem ipsum dolor sit amet, consectetur adip.</p>
-											</div>
-										</div>
-										<div class="feature4-box">
-											<div class="feature4-box-icon">
-												<span aria-hidden="true" class="icon_lightbulb_alt"></span>
-											</div>
-											<div class="feature4-box-info">
-												<h4 class="m-bot-5">RETINA READY</h4>
-												<p class="m-bot-20">Lorem ipsum dolor sit amet, consectetur adip.</p>
-											</div>
-										</div>
-										<div class="feature4-box">
-											<div class="feature4-box-icon">
-												<span aria-hidden="true" class="icon_search"></span>
-											</div>
-											<div class="feature4-box-info">
-												<h4 class="m-bot-5">SEO FRIENDLY</h4>
-												<p class="m-bot-20">Lorem ipsum dolor sit amet, consectetur adip.</p>
-											</div>
-										</div>
-									</div>
-									<div class="col-sm-6">
-										<div class="feature4-box">
-											<div class="feature4-box-icon">
-												<span aria-hidden="true" class="icon_piechart"></span>
-											</div>
-											<div class="feature4-box-info">
-												<h4 class="m-bot-5">UNLIMITED COLORS</h4>
-												<p class="m-bot-20">Lorem ipsum dolor sit amet, consectetur adip.</p>
-											</div>
-										</div>
-										<div class="feature4-box">
-											<div class="feature4-box-icon">
-												<span aria-hidden="true" class="social_googleplus"></span>
-											</div>
-											<div class="feature4-box-info">
-												<h4 class="m-bot-5">GOOGLE FONTS</h4>
-												<p class="m-bot-20">Lorem ipsum dolor sit amet, consectetur adip.</p>
-											</div>
-										</div>
-										<div class="feature4-box">
-											<div class="feature4-box-icon">
-												<span aria-hidden="true" class="icon_profile"></span>
-											</div>
-											<div class="feature4-box-info">
-												<h4 class="m-bot-5">1000+ ICONS</h4>
-												<p class="m-bot-20">Lorem ipsum dolor sit amet, consectetur adip.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					
-		</div>
-	</div><!-- features 5 END-->
-
-<!-- FEATURES 5 -->	
-	<div class="feature5-bg m-top-50">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-md-6">
-						<div class="title-lines no-after">
-							<div class="title-block m-bot-60">
-								OUR SERVICES
-							</div>
-						</div>
-							
-							<div class="row">
-								<div class="col-sm-6 col-md-6 m-bot-30">
-									<div class="feature5-icon">
-										<span aria-hidden="true" class="icon_laptop"></span>
-									</div>
-									<div class="feature5-content">
-										<h5>WEB DESIGN</h5><p>Sed in porttitor dolor. Sed eleifend vulputate nulla</p>
-									</div>
-								</div>
-								<div class="col-sm-6 col-md-6 m-bot-30">
-									<div class="feature5-icon">
-										<span aria-hidden="true" class="icon_cone_alt"></span>
-									</div>
-									<div class="feature5-content">
-										<h5>BRANDING</h5><p>Sed in porttitor dolor. Sed eleifend vulputate nulla</p>
-									</div>
-								</div>
-								<div class="col-sm-6 col-md-6 m-bot-30">
-									<div class="feature5-icon">
-										<span aria-hidden="true" class="icon_flowchart"></span>
-									</div>
-									<div class="feature5-content">
-										<h5>DEVELOPMENT</h5><p>Sed in porttitor dolor. Sed eleifend vulputate nulla</p>
-									</div>
-								</div>
-								<div class="col-sm-6 col-md-6 m-bot-30">
-									<div class="feature5-icon">
-										<span aria-hidden="true" class="icon_pens"></span>
-									</div>
-									<div class="feature5-content">
-										<h5>GRAPIC DESIGN</h5><p>Sed in porttitor dolor. Sed eleifend vulputate nulla</p>
-									</div>
-								</div>
-								<div class="col-sm-6 col-md-6 m-bot-30">
-									<div class="feature5-icon">
-										<span aria-hidden="true" class="icon_camera_alt"></span>
-									</div>
-									<div class="feature5-content">
-										<h5>PHOTOGRAPHY</h5><p>Sed in porttitor dolor. Sed eleifend vulputate nulla</p>
-									</div>
-								</div>
-								<div class="col-sm-6 col-md-6 m-bot-30">
-									<div class="feature5-icon">
-										<span aria-hidden="true" class="icon_archive_alt"></span>
-									</div>
-									<div class="feature5-content">
-										<h5>PRODUCTION</h5><p>Sed in porttitor dolor. Sed eleifend vulputate nulla</p>
-									</div>
-								</div>
-								<div class="col-sm-12 col-md-12 ">
-									<a class="button medium r-m-plus r-m-full feature5-a" href="http://themeforest.net/item/amilia-responsive-multipurpose-template/10067059?ref=abcgomel">JOIN US</a>
-								</div>
-							</div>
-						</div>					
-			</div>
-		</div>
-	</div><!-- features 5 END -->
-
-<!-- COUNTER -->
-	 <div class="counter-bg-color m-bot-60">
-		<div class="container">
-			<div class="stat clearfix">
-				<div class="col-xs-12 col-sm-6 col-md-3">
-					<div class="milestone-counter">
-						<div class="milestone-info-counter clearfix">
-							<span aria-hidden="true" class="icon_group counter-icon"></span>
-							<span class="stat-count highlight">322</span>
-						</div>
-						<div class="milestone-details">HAPPY CUSTOMERS</div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-3">
-					<div class="milestone-counter">
-						<div class="milestone-info-counter clearfix">
-							<span aria-hidden="true" class="icon_mug counter-icon"></span>
-							<span class="stat-count highlight">99</span>
-						</div>	
-						<div class="milestone-details">ORDERED COFFEE'S</div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-3">
-					<div class=" milestone-counter">
-						<div class="milestone-info-counter clearfix">
-							<span aria-hidden="true" class="icon_gift_alt counter-icon"></span>
-							<span class=" stat-count highlight">14</span>
-						</div>	
-						<div class="milestone-details">AWARDS WIN</div>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-6 col-md-3">
-					<div class="milestone-counter">
-						<div class="milestone-info-counter clearfix">
-							<span aria-hidden="true" class="icon_camera_alt counter-icon"></span>
-							<span class="stat-count highlight">121</span>
-						</div>	
-						<div class="milestone-details">PHOTOS TAKEN</div>
-					</div>
-				</div>
-			</div><!-- stat -->
-		</div>	
-	</div>	
-	
 <!-- COTENT CONTAINER -->
 	<div class="title-lines-container">
 		<div class="container">
-		
-	<!-- BLOG -->
+<!-- FEATURES -->
 			<div class="title-lines">
+				<div class="title-block">
+					FEATURES
+				</div>
+			</div>
+			<div class="row feature1-container  m-top-20 m-bot-20">
+				<div class="col-md-6 text-center wow fadeInLeft" data-wow-duration="1.3s" >
+					<img class="feature1-img" src="images/content/iphone.png" alt="iphone" />
+				</div>
+				<div class="col-md-6">
+				<div class="feature1-details-cotainer">
+				
+					<div class="feature1-row-container clearfix wow fadeInRight" data-wow-duration="700ms" data-wow-delay="300ms" >
+						<div class="feature1-icon-container" >
+							<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
+								<div class="hi-icon hi-icon-images"><span aria-hidden="true" class="icon_adjust-horiz"></span></div>
+							</div>
+						</div>
+						<div class="feature1-text-container ">
+							<h2 class="title-20">EASY TO CUSTOMIZE</h2>
+							<div>Sed ut perspiciatis unde omnis iste natus error sit  accus  antium. Dolora orem que laudantium</div>
+						</div>
+					</div>
+					
+					<div class="feature1-row-container clearfix wow fadeInRight" data-wow-duration="700ms" data-wow-delay="400ms">
+						<div class="feature1-icon-container" >
+							<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
+								<div class="hi-icon hi-icon-images"><span aria-hidden="true" class="icon_cog"></span></div>
+							</div>
+						</div>
+						<div class="feature1-text-container ">
+							<h2 class="title-20">RETINA READY</h2>
+							<div>Sed ut perspiciatis unde omnis iste natus error sit  accus  antium. Dolora orem que laudantium</div>
+						</div>
+					</div>
+					
+					<div class="feature1-row-container clearfix wow fadeInRight" data-wow-duration="700ms" data-wow-delay="500ms">
+						<div class="feature1-icon-container" >
+							<div class="hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
+								<div class="hi-icon hi-icon-images"><span aria-hidden="true" class="icon_lightbulb_alt"></span></div>
+							</div>
+						</div>
+						<div class="feature1-text-container ">
+							<h2 class="title-20">SEO FRIENDLY</h2>
+							<div>Sed ut perspiciatis unde omnis iste natus error sit  accus  antium. Dolora orem que laudantium</div>
+						</div>
+					</div>
+					
+				</div>
+				</div>
+				<div class="feature1-bg"></div>
+			</div>
+<!-- BLOG -->
+			<div class="title-lines m-bot-30">
 				<div class="title-block">
 					LATEST POSTS
 				</div>
 				<div class="view-all-container">
-					<a class="button medium r-m-plus r-m-full" href="blog-large-image.html">VIEW ALL</a>
+							<div class="customNavigation clearfix">
+								<div class="carousel-va-container">
+									<a class="button medium gray-lite" href="blog-large-image.html">VIEW ALL</a>
+								</div>
+								<div class="customNavigation-container">	
+									<a class="prev-blog"></a>
+									<a class="next-blog"></a>
+								</div>
+							</div>					
 				</div>
 			</div>	
-	
-			<div class="box-with-hover m-top-30 m-bot-50" >
-
-	<!-- Item  1 --> 
-					<div class="blog-inline-item clearfix">
-				
-						<div class="col-sm-3 col-md-2">
-							<div class="row pos-relative">
-									<div class="blog-item-date2">
-										<div class="blog-item-date">30</div>
-										<div class="blog-item-mounth">MAY</div>
-									</div>
-								<div>	
-									<div class="view view-first blog-inline-img hovered">
-										<a href="images/content/port-sqr-2.jpg" class="lightbox">
-											<img src="images/content/port-sqr-2.jpg" alt="Ipsum">
-											<div class="mask">
-												<div class="zoom info"><span aria-hidden="true" class="icon_search"></span></div>
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12  col-sm-9 col-md-10">	
-							<div class="blog-caption-container">
-								<h2><a class="a-invert" href="blog-single.html">LOREM IPSUM DOLOR SIT</a></h2>
-								<ul class="post-meta clearfix">
-									<li><span aria-hidden="true" class="icon_profile"></span><a href="#"> ADMIN</a></li>
-									<li><span aria-hidden="true" class="icon_comment_alt"></span><a href="blog-single.html#comments"> 21 COMMENTS</a></li>
-									<li><span aria-hidden="true" class="icon_circle-slelected"></span> 1021 VIEWS</li>
-									<li><span aria-hidden="true" class="icon_tags_alt"></span> <a href="#">HTML</a>, <a href="#">CSS</a>, <a href="#">WORDPRESS</a></li>
-								</ul>
-							</div>
-						</div>
-						
-					</div>
-					
-				<!-- Item 2 --> 
-					<div class="blog-inline-item clearfix">
-				
-						<div class="col-sm-3 col-md-2">
-							<div class="row pos-relative">
-									<div class="blog-item-date2">
-										<div class="blog-item-date">21</div>
-										<div class="blog-item-mounth">MAY</div>
-									</div>
-								<div >	
-									<div class="view view-first blog-inline-img hovered">
-										<a href="images/content/blog-3.jpg" class="lightbox">
-											<img src="images/content/blog-sqr-3.jpg" alt="Ipsum">
-											<div class="mask">
-												<div class="zoom info"><span aria-hidden="true" class="icon_search"></span></div>
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12  col-sm-9 col-md-10">	
-							<div class="blog-caption-container">
-								<h2><a class="a-invert" href="blog-single.html">DUIS FRINGILLA ALIQUET NUNC</a></h2>
-								<ul class="post-meta clearfix">
-									<li><span aria-hidden="true" class="icon_profile"></span><a href="#"> ADMIN</a></li>
-									<li><span aria-hidden="true" class="icon_comment_alt"></span><a href="blog-single.html#comments"> 21 COMMENTS</a></li>
-									<li><span aria-hidden="true" class="icon_circle-slelected"></span> 1021 VIEWS</li>
-									<li><span aria-hidden="true" class="icon_tags_alt"></span> <a href="#">HTML</a>, <a href="#">CSS</a>, <a href="#">WORDPRESS</a></li>
-								</ul>
-							</div>
-						</div>
-						
-					</div>					
-					
-					
-		<!-- Item  3 --> 
-					<div class="blog-inline-item clearfix">
-				
-						<div class="col-sm-3 col-md-2">
-							<div class="row pos-relative">
-									<div class="blog-item-date2">
-										<div class="blog-item-date">27</div>
-										<div class="blog-item-mounth">MAY</div>
-									</div>
-									<div>	
-									<div class="view view-first blog-inline-img hovered">
-										<a href="images/content/port-sqr-5.jpg" class="lightbox">
-											<img src="images/content/port-sqr-5.jpg" alt="Ipsum">
-											<div class="mask">
-												<div class="zoom info"><span aria-hidden="true" class="icon_search"></span></div>
-											</div>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-xs-12  col-sm-9 col-md-10">	
-							<div class="blog-caption-container">
-								<h2><a class="a-invert" href="blog-single.html"> CONTETUR ADIPISCING ELIT</a></h2>
-								<ul class="post-meta clearfix">
-									<li><span aria-hidden="true" class="icon_profile"></span><a href="#"> ADMIN</a></li>
-									<li><span aria-hidden="true" class="icon_comment_alt"></span><a href="blog-single.html#comments"> 21 COMMENTS</a></li>
-									<li><span aria-hidden="true" class="icon_circle-slelected"></span> 1021 VIEWS</li>
-									<li><span aria-hidden="true" class="icon_tags_alt"></span> <a href="#">HTML</a>, <a href="#">CSS</a>, <a href="#">WORDPRESS</a></li>
-								</ul>
-							</div>
-						</div>
-						
-					</div>
-
-			</div>
 			
-	<!-- TESTIMONIALS -->
-			<div class="ts-container ts-lines" >
-				<div class="ts-icon-container-bg" >
-					<div class="ts-icon-container" >
-						<span aria-hidden="true" class="icon_quotations main-menu-icon"></span>
+		<div class="row box-with-hover" >
+			<div id="owl-blog" class="owl-carousel" >
+			<!-- Item --> 
+				<div class="item">
+					<div class="view view-first blog-hover hovered">
+						<a href="images/content/blog-1.jpg" class="lightbox">
+							<img src="images/content/blog-sqr-1.jpg" alt="Ipsum">
+							<div class="blog-item-date-cont">
+								<div class="blog-item-date">30</div>
+								<div class="blog-item-mounth">MAY</div>
+							</div>
+							<div class="mask">
+								<div class="zoom info"><span aria-hidden="true" class="icon_search"></span></div>
+							</div>
+						</a>
+					</div>
+					<div class="blog-carousel-caption-container">
+						<a class="a-invert" href="blog-single.html">LOREM IPSUM</a>
+					</div>
+					<div class="blog-carousel-text-container">
+						Praesent blandit turpis leo, ut iaculis arcu. Pas umsan tristique massa, in auctor  at hendrerit id. Sed liquam  a ongue  inar blandit turpis leo, ut iaculis arcu.
+					</div>
+					<div class="blog-carousel-button-container">
+						<a class="button medium blog-rm" href="blog-single.html">READ MORE</a>
 					</div>
 				</div>
-				<div class="ts-main-container-bg" >
-					<div class="ts-main-container clearfix" >
-						<div class="ts-text-container">
-							<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nisl orci, condim entum ultrices consequat eu, vehicula. Aenean nisl orci, condim. Ut adipiscing, leo nec.</div>
-							<div class="right-text t-a-container"><span class="author-testimonial">John Doe</span><span class="quote-author-description">CEO, Company</span>
+						<!-- Item --> 
+				<div class="item">
+					<div class="view view-first blog-hover hovered">
+						<a href="images/content/blog-2.jpg" class="lightbox">
+							<img src="images/content/blog-sqr-2.jpg" alt="Ipsum">
+							<div class="blog-item-date-cont">
+								<div class="blog-item-date">25</div>
+								<div class="blog-item-mounth">MAY</div>
 							</div>
-						</div>
-						<div class="ts-img-container">
-							<img src="images/content/ts-author.jpg" alt="Ipsum" >
-						</div>
+							<div class="mask">
+								<div class="zoom info"><span aria-hidden="true" class="icon_search"></span></div>
+							</div>
+						</a>
+					</div>
+					<div class="blog-carousel-caption-container">
+						<a class="a-invert" href="blog-single.html">LOREM IPSUM</a>
+					</div>
+					<div class="blog-carousel-text-container">
+						Praesent blandit turpis leo, ut iaculis arcu. Pas umsan tristique massa, in auctor  at hendrerit id. Sed liquam  a ongue  inar blandit turpis leo, ut iaculis arcu.
+					</div>
+					<div class="blog-carousel-button-container">
+						<a class="button medium blog-rm" href="blog-single.html">READ MORE</a>
 					</div>
 				</div>
-			</div>
-			
-<!-- OUR CLIENTS -->	
-			<div class="row" >
-				<div id="owl-clients" class="owl-carousel our-clients-container" >
-					<div class="item"><img src="images/logos/logo1.png" alt="client"></div>
-					<div class="item"><img src="images/logos/logo2.png" alt="client"></div>
-					<div class="item"><img src="images/logos/logo3.png" alt="client"></div>
-					<div class="item"><img src="images/logos/logo4.png" alt="client"></div>
-					<div class="item"><img src="images/logos/logo5.png" alt="client"></div>
-					<div class="item"><img src="images/logos/logo6.png" alt="client"></div>
-					<div class="item"><img src="images/logos/logo7.png" alt="client"></div>
+						<!-- Item --> 
+				<div class="item">
+					<div class="view view-first blog-hover hovered">
+						<a href="images/content/blog-3.jpg" class="lightbox">
+							<img src="images/content/blog-sqr-3.jpg" alt="Ipsum">
+							<div class="blog-item-date-cont">
+								<div class="blog-item-date">24</div>
+								<div class="blog-item-mounth">DEC</div>
+							</div>
+							<div class="mask">
+								<div class="zoom info"><span aria-hidden="true" class="icon_search"></span></div>
+							</div>
+						</a>
+					</div>
+					<div class="blog-carousel-caption-container">
+						<a class="a-invert" href="blog-single.html">LOREM IPSUM</a>
+					</div>
+					<div class="blog-carousel-text-container">
+						Praesent blandit turpis leo, ut iaculis arcu. Pas umsan tristique massa, in auctor  at hendrerit id. Sed liquam  a ongue  inar blandit turpis leo, ut iaculis arcu.
+					</div>
+					<div class="blog-carousel-button-container">
+						<a class="button medium blog-rm" href="blog-single.html">READ MORE</a>
+					</div>
 				</div>
+						<!-- Item --> 
+				<div class="item">
+					<div class="view view-first blog-hover hovered">
+						<a href="images/content/blog-4.jpg" class="lightbox">
+							<img src="images/content/blog-sqr-4.jpg" alt="Ipsum">
+							<div class="blog-item-date-cont">
+								<div class="blog-item-date">20</div>
+								<div class="blog-item-mounth">DEC</div>
+							</div>
+							<div class="mask">
+								<div class="zoom info"><span aria-hidden="true" class="icon_search"></span></div>
+							</div>
+						</a>
+					</div>
+					<div class="blog-carousel-caption-container">
+						<a class="a-invert" href="blog-single.html">LOREM IPSUM</a>
+					</div>
+					<div class="blog-carousel-text-container">
+						Praesent blandit turpis leo, ut iaculis arcu. Pas umsan tristique massa, in auctor  at hendrerit id. Sed liquam  a ongue  inar blandit turpis leo, ut iaculis arcu.
+					</div>
+					<div class="blog-carousel-button-container">
+						<a class="button medium blog-rm" href="blog-single.html">READ MORE</a>
+					</div>
+				</div>	
+			<!-- Item --> 
+				<div class="item">
+					<div class="view view-first blog-hover hovered">
+						<a href="images/content/blog-5.jpg" class="lightbox">
+							<img src="images/content/blog-sqr-5.jpg" alt="Ipsum">
+							<div class="blog-item-date-cont">
+								<div class="blog-item-date">20</div>
+								<div class="blog-item-mounth">NOV</div>
+							</div>
+							<div class="mask">
+								<div class="zoom info"><span aria-hidden="true" class="icon_search"></span></div>
+							</div>
+						</a>
+					</div>
+					<div class="blog-carousel-caption-container">
+						<a class="a-invert" href="blog-single.html">LOREM IPSUM</a>
+					</div>
+					<div class="blog-carousel-text-container">
+						Praesent blandit turpis leo, ut iaculis arcu. Pas umsan tristique massa, in auctor  at hendrerit id. Sed liquam  a ongue  inar blandit turpis leo, ut iaculis arcu.
+					</div>
+					<div class="blog-carousel-button-container">
+						<a class="button medium blog-rm" href="blog-single.html">READ MORE</a>
+					</div>
+				</div>
+			<!-- Item --> 
+				<div class="item">
+					<div class="view view-first blog-hover hovered">
+						<a href="images/content/blog-6.jpg" class="lightbox">
+							<img src="images/content/blog-sqr-6.jpg" alt="Ipsum">
+							<div class="blog-item-date-cont">
+								<div class="blog-item-date">1</div>
+								<div class="blog-item-mounth">JUL</div>
+							</div>
+							<div class="mask">
+								<div class="zoom info"><span aria-hidden="true" class="icon_search"></span></div>
+							</div>
+						</a>
+					</div>
+					<div class="blog-carousel-caption-container">
+						<a class="a-invert" href="blog-single.html">LOREM IPSUM</a>
+					</div>
+					<div class="blog-carousel-text-container">
+						Praesent blandit turpis leo, ut iaculis arcu. Pas umsan tristique massa, in auctor  at hendrerit id. Sed liquam  a ongue  inar blandit turpis leo, ut iaculis arcu.
+					</div>
+					<div class="blog-carousel-button-container">
+						<a class="button medium blog-rm" href="blog-single.html">READ MORE</a>
+					</div>
+				</div>				
 			</div>
-			
-		</div><!-- container end -->
-			
-	</div><!-- title-lines-container end -->
-	
-	<!-- COTENT CONTAINER -->
-	<div class="title-lines-container">
-		<div class="container">
-	
+		</div>
+		
 <!-- NEWS LETTER -->
 			<div class="nl-container nl-lines" >
 				<div class="nl-icon-container-bg" >
@@ -1375,12 +1199,10 @@
 						</div>
 					</div>
 				</div>
-			</div>	
-		</div>	
-	</div>		
-	
-	
-	
+			</div>
+		</div><!-- container end -->
+			
+	</div>	
 <!-- FOOTER 1 -->
 	<footer>
 	<!-- Google Maps -->
@@ -1542,107 +1364,162 @@
 </div><!-- End wrap -->	
 
 <!-- JS begin -->
-		<!-- jQuery  -->
+	
+		<!-- jQUERY -->
 		<script type="text/javascript" src="js/jquery.min.js"></script>
  
 		<script src="js/jquery-ui.min.js"></script>
 		
+		<!-- IMAGESLOADED -->
+		<script src="js/jquery.imagesloaded.min.js"></script>	
+
 		<!-- REVOSLIDER SCRIPTS  -->
 		<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 		<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution-custom.min.js"></script>
-		
+
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
 		
 		<!-- JS FOR OWL CAROUSEL -->
 		<script src="js/owl-carousel/owl.carousel.min.js"></script>
-	
+
 			<!-- SEARCH  SCRIPT IN MAIN JS  --> 
 			
 			<!--GOOLE MAP-->
 			<script type="text/javascript"
 			src="https://maps.google.com/maps/api/js?key=INSERT-YOUR-API-KEY-HERE"></script>
 			<script type="text/javascript" src="js/gmap3.min.js"></script>
-			
-			<!-- MAGNIFIC POPUP -->
+
+			<!-- PORTFOLIO FILTER -->
+			 <script src="js/jquery.isotope.min.js"></script>
+
+			 <!-- MAGNIFIC POPUP -->
 			<script src='js/jquery.magnific-popup.js'></script>
+
+			<!-- SCROLL ANIMATIONS ON -->		
+			<script src="js/wow.min.js"></script>
+			<script>
+			 new WOW().init();
+			</script>	
 			
 			<!-- MAIN SCRIPT -->
 			<script src="js/main.js"></script>
 			
 			<!-- IMPORTANT SCRIPTS SETTINGS -->
 			<script>
-			//GOOGLE MAPS SETTINGS	--------------------------------------------------------
-			var latlng = new google.maps.LatLng(-37.814199, 144.961734); 
+			//GOOGLE MAP ---------------------------------------------------------------------	
+					var latlng = new google.maps.LatLng(-37.814199, 144.961734); 
 
-			//var latLng = [48.8620722, 2.352047];
+					//var latLng = [48.8620722, 2.352047];
 
-			//GOOGLE MAP FOOTER	
-			$(function(){
-				$("#big-map-footer").gmap3(
-				  { 
-					marker:{
-							//address: "385 Bourke St., Melbourne Victoria 3000 Australia", 
-							latLng:latlng,
-							data:"<h4>Office</h4>Your description is here.", 
-							options:{icon: "images/loc-marker.png"},
-							
-							events:{
-							  click: function(marker, event, context){
-								var map = $(this).gmap3("get"),
-								  infowindow = $(this).gmap3({get:{name:"infowindow"}});
-								if (infowindow){
-								  infowindow.open(map, marker);
-								  infowindow.setContent(context.data);
-								} else {
-								  $(this).gmap3({
-									infowindow:{
-									  anchor:marker, 
-									  options:{content: context.data}
+				//GOOGLE MAP FOOTER	
+				$(function(){
+					$("#big-map-footer").gmap3(
+					  { 
+						marker:{
+								//address: "385 Bourke St., Melbourne Victoria 3000 Australia", 
+								latLng:latlng,
+								data:"<h4>Office</h4>Your description is here.", 
+								options:{icon: "images/loc-marker.png"},
+								
+								events:{
+								  click: function(marker, event, context){
+									var map = $(this).gmap3("get"),
+									  infowindow = $(this).gmap3({get:{name:"infowindow"}});
+									if (infowindow){
+									  infowindow.open(map, marker);
+									  infowindow.setContent(context.data);
+									} else {
+									  $(this).gmap3({
+										infowindow:{
+										  anchor:marker, 
+										  options:{content: context.data}
+										}
+									  });
 									}
-								  });
+								  },
 								}
-							  },
-							}
-							
-						  },
-							map:{
 								
-							  options:{
-								//center: latlng,
-								scrollwheel: false,
-								zoom:18,
-								
-								mapTypeId: "style2",
-								mapTypeControlOptions: {
-								mapTypeIds: [google.maps.MapTypeId.ROADMAP]
-								}
 							  },
+								map:{
+									
+								  options:{
+									//center: latlng,
+									scrollwheel: false,
+									zoom:18,
+									
+									mapTypeId: "style2",
+									mapTypeControlOptions: {
+									mapTypeIds: [google.maps.MapTypeId.ROADMAP]
+									}
+								  },
 
-							},
-							styledmaptype:{
-							  id: "style2",
-							  options:{
-								name: "Style 2"
-							  },
-							  styles: [
-								{
-								  stylers: [
-									{ saturation: -80},
-									{  hue: "#ffee00"}
+								},
+								styledmaptype:{
+								  id: "style2",
+								  options:{
+									name: "Style 2"
+								  },
+								  styles: [
+									{
+									  stylers: [
+										{ saturation: -80},
+										{  hue: "#ffee00"}
+									  ]
+									}
 								  ]
-								}
-							  ]
-							},
-							
-						  }
-						);
-				});
+								},
+								
+							  }
+							);
+					});			
 			
-			//jQuery(document).ready START	------------------------------------------------
+			
+			//PORTFOLIO FILTER-----------------------------------------------------
+				  
+				  var $container = $('#filter-container').imagesLoaded( function() {
+					  $container.isotope({
+						itemSelector : '.element'
+					  });
+				  });
+				  
+				  
+				  var $optionSets = $('#options .option-set'),
+					  $optionLinks = $optionSets.find('a');
+
+				  $optionLinks.click(function(){
+					var $this = $(this);
+					// don't proceed if already selected
+					if ( $this.hasClass('selected') ) {
+					  return false;
+					}
+					var $optionSet = $this.parents('.option-set');
+					$optionSet.find('.selected').removeClass('selected');
+					$this.addClass('selected');
+			  
+					// make option object dynamically, i.e. { filter: '.my-filter-class' }
+					var options = {},
+						key = $optionSet.attr('data-option-key'),
+						value = $this.attr('data-option-value');
+					// parse 'false' as false boolean
+					value = value === 'false' ? false : value;
+					options[ key ] = value;
+					if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+					  // changes in layout modes need extra logic
+					  changeLayoutMode( $this, options )
+					} else {
+					  // otherwise, apply new options
+					  $container.isotope( options );
+					}
+					
+					return false;
+				  });
+
+			
+//jQuery(document).ready START	==============================================================
 			jQuery(document).ready(function() {
 			
-					//REVOSLIDER SCRIPT-----------------------------------------------------			
+			//REVOSLIDER SCRIPT 3 -----------------------------------------------------			
 					jQuery('.tp-banner').show().revolution(
 					{
 						dottedOverlay:"none",
@@ -1690,6 +1567,7 @@
 						soloArrowRightValign:"center",
 						soloArrowRightHOffset:20,
 						soloArrowRightVOffset:0,
+
 						
 						shadow:0,
 						fullWidth:"on",
@@ -1706,6 +1584,8 @@
 						autoHeight:"off",						
 						forceFullWidth:"off",						
 												
+												
+												
 						hideThumbsOnMobile:"on",
 						hideNavDelayOnMobile:1500,						
 						hideBulletsOnMobile:"on",
@@ -1721,14 +1601,14 @@
 						fullScreenOffsetContainer: ""	
 					});
 					
-					// Carousel CLIENTS Items-----------------------------------------------
-					$("#owl-clients").owlCarousel({
-			 
+			// Carousel Blog Items---------------------------------------------
+					  $("#owl-blog").owlCarousel({
+					 
 						  //Set AutoPlay to 3 seconds
-						  autoPlay : 5000,
-						  items : 5,
+					 
+						  items : 4,
 						  itemsDesktop : [1000,4], //5 items between 1000px and 901px
-						  itemsDesktopSmall : [900,3], // betweem 900px and 601px
+						  itemsDesktopSmall : [900,2], // betweem 900px and 601px
 						  itemsTablet: [470,1], //2 items between 600 and 0
 						  itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
 						 // itemsDesktop : [1199,4],
@@ -1741,9 +1621,29 @@
 							paginationNumbers: false,
 					 
 					  });
+			// Carousel Blog Items Controls------------------------------------
+					  var owl = $("#owl-blog");
 
+					  owl.owlCarousel();
+
+					  // Custom Navigation Events
+					  $(".next-blog").click(function(){
+						owl.trigger('owl.next');
+					  })
+					  $(".prev-blog").click(function(){
+						owl.trigger('owl.prev');
+					  })
+					  $(".play").click(function(){
+						owl.trigger('owl.play',1000);
+					  })
+					  $(".stop").click(function(){
+						owl.trigger('owl.stop');
+					  });					  
+					  
+					  
 				});	//document ready -END
 			</script>
+					
 			
 			<!-- Pre LOADER -->
 			<script>
